@@ -69,7 +69,9 @@ String someStr = "Some text";
 ``` 
 [Classes](class.md) (derived from object)
 
-C# and C++ both support pointers with the same functionality.
+C# and C++ both support pointers with the same functionality.  
+
+Creating a container to hold any type of object in C# can be done simply with the object data type. This is not so simple in C++.
 
 C++
 ===
@@ -117,7 +119,8 @@ Note that structs can also support functions.
 
 [Classes](class.md)
 
-C++ Reference Types:  
+C++ Reference Types: 
+--- 
 C++ by itself does not have any default reference types, but it does support a reference operator.  
 In C++, a reference is just like a pointer, but after being initialized, a reference cannot be set to a different value. An lvalue reference is used to refer to a named variable, and an rvalue is used to refer to a temporary object.  
 Creating lvalue references with the `&` operator:  
@@ -125,4 +128,6 @@ Creating lvalue references with the `&` operator:
 int &i;
 std::string &str;
 ```
-rvalue references are created using the `&&` operator.
+rvalue references are created using the `&&` operator.  
+
+Because C++ is a type strict language, creating a container to hold objects of different types must be done using some sort of template class.
