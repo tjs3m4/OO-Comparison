@@ -4,9 +4,9 @@
 -------------------------
 C#
 ===
-Value Types:  
+#Value Types:  
 The following primitive data types are build into C#:  
-`bool` `byte` `char` `decimal` `double` `float` `int` `long` `sbyte` `short` `uint` `ulong` `ushort` 
+`bool` `byte` `char` `decimal` `double` `float` `int` `long` `sbyte` `short` `uint` `ulong` `ushort`  
 C# also supports the following value types:   
 Enumerations, by use of the `enum` keyword:  
 ```C#
@@ -23,7 +23,7 @@ public struct pencil
 
 These types are assigned to a variable by value.  
 
-C# also has the following Reference Types:  
+#C# also has the following Reference Types:  
 'object' 'dynamic' `String`  
 
 'object' and 'dynamic' types can hold any other type.  
@@ -55,6 +55,7 @@ C# and C++ both support pointers with the same functionality.
 
 C++
 ===
+#Value Types:
 The following primitive data types are build into C++:  
 `bool` `char` `int` `float` `double` `void` `wchar_t`  
 These primitive data types can be modified with the following keywords:  
