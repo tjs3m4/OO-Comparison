@@ -6,7 +6,7 @@ C#
 ===
 Whether or not a namespace is declared in a C# file, the compiler will add a default one. 
 To declare a namespace in C#, use the keyword "namespace" and include its members much like you would do for a class.
-''''C#
+'''C#
 namespace ExampleNamespace
 {
 	class ExampleClass 
@@ -18,27 +18,26 @@ namespace ExampleNamespace
 		}
 	}
 }
-''''
+'''
 
 To use a namespace, write its name, a ".", then the class, function, value, etc associate with that namespace.
-''''C#
+'''C#
 ExampleNamespace.ExampleClass.exampleFunction(x);
-''''
-''''C#
+'''
+'''C#
 System.Console.WriteLine("System is a namespace!");
-''''
+'''
 
 Alternatively, use the keyword "using" followed by the name of the namespace you want to use.
-''''C#
+'''C#
 using ExampleNamespace;
 
 ExampleClass.exampleFunction(x);
-''''
-''''C#
+'''
+'''C#
 using System;
 Console.WriteLine("System is a namespace!");
-
-''''
+'''
 
 C++
 ===
