@@ -74,6 +74,8 @@ The only differences between a `struct` and a `class` in C++ are
 	1: Default access for a `struct` is `public` while default access for a `class` is `private`  
 	2: On inheritance, `struct` defaults to public inheritance while `class` defaults to private inheritance  
 
+An interesting difference between `struct` in C++ and C# is that in C++ `struct` supports inheritance.  
+
 Private inheritance means that, when a derived class inherits from a base class, the public and protected members of the base class become private members of the derived class. For public inheritance, the access level of members derived from the base class remains the same.  
 
 There is no base class that all classes inherit from in C++.
