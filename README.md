@@ -12,3 +12,5 @@ Comparing: C++ and C#
 [Types](types.md)
 
 [Classes](classes.md)
+
+[Interfaces and Inheritance](interfaces.md)
