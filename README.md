@@ -10,3 +10,5 @@ Comparing: C++ and C#
 [Name Spaces](name_spaces.md)
 
 [Types](types.md)
+
+[Classes](classes.md)
