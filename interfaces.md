@@ -9,10 +9,11 @@ C++
 ===
 
 C++ does not have interfaces but their functionality can be recreated by use of an abstract class.
-An abstract class is made in C++ by making one of the class's functions a pure virtual function.  
+An abstract class is made in C++ by making one of the class's functions a pure virtual function.
+
 A pure virtual function is created by adding the keyword `virtual` before the return type specifier, and `= 0` after the function declaration. The Inheriting class can then override the functions in the abstract class.  
 
-C++ allows for the overriding of functions only if the function is declared as a virtual function within the class by use of the keyword `virtual`. A virtual function is one that is expected to be overriden in the derived class.  
+C++ allows for the overriding of functions only if the function is declared as a virtual function within the class by use of the keyword `virtual`. A virtual function is one that is expected to be overriden in the derived class, while a pure virtual function is one that MUST be overriden. Failure to to do will result in a compile error.  
 
 Overriding can be done by having a function with the same signature as the virtual function in the base class. It is up to the programmer to decide whether or not to add the optional `override` keyword at the end of the function declaration.  
 ```C++
@@ -32,7 +33,7 @@ void foo() override
 }
 ```
 
-Abstract classes cannot be instantiated, and a class inheriting from the abstract class must implement the pure virtual function. Only the pure virtual function must be overridden. To simplify, the difference between a virtual function and a pure virtual function is that a pure function MUST be overriden in an inheriting class. Failure to do so will result in a compile error.   
+Abstract classes cannot be instantiated, and a class inheriting from the abstract class must implement the pure virtual function. Note that only the pure virtual function must be overridden.
 
 Extending a class in C++ is done by the following:  
 ```C++
