@@ -20,7 +20,7 @@ namespace ExampleNamespace
 	}  
 }  
 ```
-To use a namespace, write its name, a `.`, then the class, function, value, etc associate with that namespace.
+To use a namespace, write its name, a `.`, then the class, function, value, etc associated with that namespace.
 ```C#
 ExampleNamespace.ExampleClass.exampleFunction(x);  
 ```
@@ -28,7 +28,7 @@ or
 ```C#
 System.Console.WriteLine("System is a namespace!");  
 ```
-Alternatively, use the keyword "using" followed by the name of the namespace you want to use.  
+Alternatively, use the keyword `using` followed by the name of the namespace you want to use.  
 ```C#
 using ExampleNamespace;
 ExampleClass.exampleFunction(x);
