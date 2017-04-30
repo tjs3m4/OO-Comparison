@@ -71,7 +71,7 @@ C++ supports three access modifiers: `public` `private` and `protected`
 The default access level for members of a class is `private`  
 
 The only differences between a `struct` and a `class` in C++ are  
-	1: Default access for a `struct` is `public` while default access for a `class` is private  
+	1: Default access for a `struct` is `public` while default access for a `class` is `private`  
 	2: On inheritance, `struct` defaults to public inheritance while `class` defaults to private inheritance  
 
 Private inheritance means that, when a derived class inherits from a base class, the public and protected members of the base class become private members of the derived class. For public inheritance, the access level of members derived from the base class remains the same.  
