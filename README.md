@@ -13,6 +13,10 @@ Comparing: C++ and C#
 
 [Classes](classes.md)
 
+[Singleton](singleton.md)
+
 [Interfaces and Inheritance](interfaces.md)
 
 [Reflection](reflection.md)
+
+[Lambda Expressions](lambda.md)

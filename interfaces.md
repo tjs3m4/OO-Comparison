@@ -30,6 +30,13 @@ class Circle : Shape
 }
 ```
 C# does not support access level specifiers on extenstion.  
+If you want to prevent other classes from inheriting from a class, use the `sealed` keyword. This is the equivalent of `final` in Java.  
+```C#
+sealed class A 	//class A cannot be extended
+{
+	// class specifics
+}
+```
 
 C++
 ===
@@ -77,7 +84,7 @@ An example abstract class and inheritance:
 class Shape // base class
 {
 	public:
-		virtual int calculateArea() = 0;
+		virtual int calculateArea() = 0;	// pure virtual function
 
 		void setLocation(int locx, int locy)
 		{
@@ -102,3 +109,11 @@ class Circle : public Shape
 };
 ```
 Abstract classes can have their own members. Note that when this class is extended, the subclass will have x and y as `private` members due to the private inheritance property of classes.  
+
+C++11 supports the `final` keyword to prevent classes from being extended and functions from being overwritten.  
+```C++
+class A final 	// class A cannot be extended
+{
+	//class specifics
+};
+```
