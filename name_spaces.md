@@ -23,15 +23,16 @@ To use a namespace, write its name, a ".", then the class, function, value, etc 
 ```C#
 ExampleNamespace.ExampleClass.exampleFunction(x);  
 ```
+or
 ```C#
 System.Console.WriteLine("System is a namespace!");  
 ```
 Alternatively, use the keyword "using" followed by the name of the namespace you want to use.  
 ```C#
-using ExampleNamespace;  
-
-ExampleClass.exampleFunction(x);  
+using ExampleNamespace;
+ExampleClass.exampleFunction(x);
 ```
+or
 ```C#
 using System;  
 Console.WriteLine("System is a namespace!");  
