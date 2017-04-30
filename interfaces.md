@@ -7,6 +7,7 @@ C#
 ```C#
 interface Shape
 {
+	int calculateArea();
 	int x
 	{
 		get;
@@ -18,10 +19,22 @@ interface Shape
 		set;
 	}
 }
+
+class Circle : Shape
+{
+	private int radius;
+	public int calculateArea()
+	{
+		return 3.14 * (radius * radius);
+	}
+}
 ```
+C# does not support access level specifiers on extenstion.  
 
 C++
 ===
+
+C++ interfaces are where things start to get a little messy.  
 
 C++ does not have interfaces but their functionality can be recreated by use of an abstract class.
 An abstract class is made in C++ by making one of the class's functions a pure virtual function.
@@ -57,7 +70,7 @@ class InheritingClass: public BaseClass
 	// class specifications
 }
 ```
-The access level specifier on the BaseClass limits the access level of members that are inherited from the base class. What this means is that members with a higher access level will be inherited with the specified access level instead. Because public is the highest access level, specifying public effectively does nothing, but if private was used, any inherited member of BaseClass would become private inside of InheritingClass.  
+The access level specifier on the BaseClass limits the access level of members that are inherited from the base class. What this means is that members with a higher access level will be inherited with the specified access level instead. Because public is the highest access level, specifying public effectively does nothing, but if private was used, any inherited member of BaseClass would become private inside of InheritingClass. If no access level specifier is given, `class` default to private inheritance, and `struct` defaults to public inheritance.  
 
 An example abstract class and inheritance:
 ```C++

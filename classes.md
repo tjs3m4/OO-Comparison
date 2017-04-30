@@ -71,9 +71,9 @@ class SomeClass
 };
 
 	// two ways to create an instance
-	SomeClass b(1);
 	SomeClass *a = new SomeClass(1);
-	
+	SomeClass b(1);
+
 	//using different instances
 	std::cout << a->getData();
 	std::cout << b.getData();
