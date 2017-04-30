@@ -8,3 +8,5 @@ Comparing: C++ and C#
 [Unique Features](unique_features.md)
 
 [Name Spaces](name_spaces.md)
+
+[Types](types.md)
