@@ -1,8 +1,6 @@
-[a relative link](README.md)Main Page
+[Main Page](README.md)
 
 # Language Purposes
 -------------------------
 #### C#
 
-
-####C++
