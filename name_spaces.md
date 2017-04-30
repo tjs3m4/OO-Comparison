@@ -20,7 +20,7 @@ namespace ExampleNamespace
 	}  
 }  
 ```
-To use a namespace, write its name, a ".", then the class, function, value, etc associate with that namespace.
+To use a namespace, write its name, a `.`, then the class, function, value, etc associate with that namespace.
 ```C#
 ExampleNamespace.ExampleClass.exampleFunction(x);  
 ```
@@ -42,7 +42,7 @@ Console.WriteLine("System is a namespace!");
 C++
 ===
 To use a namespace, one can either use the keyword `using namespace` or by using the namespace specifier `::` where a namespace name is given before the first colon, and a member of that namespace is given after the second.  
-All standard library functions in C++ are nested inside of the "std" namespace.  
+All standard library functions in C++ are nested inside of the `std` namespace.  
 ```C++
 using namespace std;
 cout<<"Hello World!";
@@ -61,7 +61,7 @@ namespace ExampleNamespace
 		{  
 			std::cout<<"Value of x: "<<x;
 		}  
-	};
+	}; 			//note that C++ ends class declaration with a ; while C# does not
 }  
 ```
 To use it:
@@ -73,4 +73,3 @@ ExampleClass.exampleFunction(x);
 ```C++
 ExampleNamespace::ExampleClass.exampleFunction(x);
 ```
-An interesting difference in syntax between the two languages: C++ ends class declarations with a `;` while C# does not.  
