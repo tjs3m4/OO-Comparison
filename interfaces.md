@@ -4,6 +4,21 @@
 -------------------------
 C#
 ===
+```C#
+interface Shape
+{
+	int x
+	{
+		get;
+		set;
+	}
+	int y
+	{
+		get;
+		set;
+	}
+}
+```
 
 C++
 ===

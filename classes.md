@@ -13,14 +13,24 @@ class SomeClass
 		// do something
 	}
 	private	int data;
-
-	public int getData()
+	public int data2;
 	{
-		return data;
+		get
+		{
+			return data2;
+		}
+		protected set
+		{
+			data2 = value;
+		}
 	}
-
 }
+
+// to create instance
+SomeClass obj = new SomeClass();
 ```
+`get` and `set` can be assigned access levels. By default, they have the same access level as the property they are assigned to.  
+
 To refer to an instance of/in the class from within the class itself use the `this` keyword. 
 
 C# supports the following access modifiers: `public` `protected` `interal` `private` and `protected internal`
@@ -42,24 +52,31 @@ A class in C++:
 ```C++
 class SomeClass
 {
-	SomeClass() //constructor
-	{
-		// do something
-	}
-	~SomeClass() //destructor
-	{
-		// do something
-	}
 	private:
 		int data1;
 		int data2;
 	public: 
+		SomeClass() //constructor
+		{
+			// do something
+		}
+		~SomeClass() //destructor
+		{
+			// do something
+		}
 		int getData()
 		{
-			return data;
+			return data1;
 		}
-
 };
+
+	// two ways to create an instance
+	SomeClass b(1);
+	SomeClass *a = new SomeClass(1);
+	
+	//using different instances
+	std::cout << a->getData();
+	std::cout << b.getData();
 ```
 To refer to an instance of/in the class from within the class itself use the `this` keyword.
 
