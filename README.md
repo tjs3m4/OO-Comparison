@@ -26,3 +26,5 @@ Comparing: C++ and C#
 [Supporterd Programming Paradigms](paradigm.md)
 
 [Comparisons](comparisons.md)
+
+[Memory Management](memory.md)
