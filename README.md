@@ -20,3 +20,7 @@ Comparing: C++ and C#
 [Reflection](reflection.md)
 
 [Lambda Expressions](lambda.md)
+
+[Singleton](singleton.md)
+
+[Supporterd Programming Paradigms](paradigm.md)

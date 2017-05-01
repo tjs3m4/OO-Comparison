@@ -13,7 +13,7 @@ class SomeClass
 		// do something
 	}
 	private	int data;
-	public int data2;
+	public int data2
 	{
 		get
 		{
@@ -56,9 +56,9 @@ class SomeClass
 		int data1;
 		int data2;
 	public: 
-		SomeClass() //constructor
+		SomeClass(int x) //constructor
 		{
-			// do something
+			data1 = x;
 		}
 		~SomeClass() //destructor
 		{
@@ -72,11 +72,11 @@ class SomeClass
 
 	// two ways to create an instance
 	SomeClass *a = new SomeClass(1);
-	SomeClass b(1);
+	SomeClass b(2);
 
 	//using different instances
-	std::cout << a->getData();
-	std::cout << b.getData();
+	std::cout << a->getData();		// prints 1
+	std::cout << b.getData();		// prints 2
 ```
 To refer to an instance of/in the class from within the class itself use the `this` keyword.
 

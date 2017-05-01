@@ -33,7 +33,7 @@ auto func = [] ()
 { 
 	std::cout << "Hello world"; 
 };
-func(); // now call the function
+func(); // function call
 ```
 Note that the type specifier `auto` allows us to let the compiler determine the type of variable, rather than us declaring the variable's specific type.
 

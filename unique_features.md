@@ -4,6 +4,7 @@
 -------------------------
 C#
 ===
+C# runs off of microsofts .NET framework. The .NET framework provides a library of classes and functions for the C# language to use. The .NET framework also contains the common language runtime, which handles core services like memory management and threading during runtime.  
 
 C++
 ===

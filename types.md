@@ -9,6 +9,8 @@ Value Types:
 The following primitive data types are build into C#:  
 `bool` `byte` `char` `decimal` `double` `float` `int` `long` `sbyte` `short` `uint` `ulong` `ushort`  
 
+These types are aliases for their equivalents inside of the .NET framework. For example: `int` and `System.Int32` are the same thing.  
+
 C# also supports the following value types:   
 Enumerations, by use of the `enum` keyword:  
 ```C#
