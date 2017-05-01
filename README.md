@@ -24,3 +24,5 @@ Comparing: C++ and C#
 [Singleton](singleton.md)
 
 [Supporterd Programming Paradigms](paradigm.md)
+
+[Comparisons](comparisons.md)
